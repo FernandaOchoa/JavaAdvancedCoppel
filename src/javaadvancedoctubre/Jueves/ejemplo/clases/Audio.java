@@ -1,19 +1,15 @@
-package javaadvancedoctubre.Jueves;
-
-import javaadvancedoctubre.Jueves.ejemplo.interfaces.PlayMusic;
-import sun.audio.AudioPlayer;
-import sun.audio.AudioStream;
+package javaadvancedoctubre.Jueves.ejemplo.clases;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import javaadvancedoctubre.Jueves.ejemplo.interfaces.PlayMusic;
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
 
-/**
- * Created by monsh on 19/10/2017.
- */
-public class Hola implements PlayMusic{
+public class Audio implements PlayMusic{
     String song;
-
+    
     @Override
     public void PlayMusic(String song) {
         this.song = song;
@@ -26,6 +22,5 @@ public class Hola implements PlayMusic{
             ioe.printStackTrace();
         }
     }
-
-   
+    
 }
